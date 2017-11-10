@@ -1,1 +1,4 @@
 src/.ipynb_checkpoints/xmlExtraction-checkpoint.ipynb
+.project
+.pydevproject
+src/CombineExtraction.pyc
