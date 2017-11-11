@@ -44,6 +44,7 @@ class ImgExtraction:
     # |-----------------------------------------------------------------------------|
     def extractImgData(self,imgFilePath,elementDict):
         # parsing xml in tree
+        flag = False
         img = cv2.imread(imgFilePath)
         key=difflib.get_close_matches('object',elementDict,n=100)
         i=0
@@ -56,17 +57,18 @@ class ImgExtraction:
             #print(xmin)
             out = img[ymin:ymax,xmin:xmax]
             strimg="Cropped"+str(i)+".jpeg"
-            print(strimg)
+           # print(strimg)
             cv2.imwrite(strimg, out)
             cv2.waitKey(0)
-        return True
+        flag=True
+        return flag
 
 if __name__ == '__main__':
     xmlpath="../xmlData/lady.xml"
     xmlExtraction = XmlExtraction()
     elementDict = xmlExtraction.extractXMLData(xmlpath)
     # debug
-    print('elementDict = {} '.format(elementDict))
+   # print('elementDict = {} '.format(elementDict))
 
     imgpath="../img/lady.jpeg"
     imgExtraction=ImgExtraction()
