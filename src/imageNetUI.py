@@ -21,20 +21,45 @@ class ImageNetUI:
 #         print ('categoryList = {} '.format(categoryList))
 #         #debug -ends
 
-        xmlFilePath="../xmlData/lady.xml"
-        elementDict = xmlExtraction.extractXMLData(xmlFilePath = xmlFilePath)
+        xmlFilePath="I:/ILSVRC/Annotations/DET/train/"        
+        imgpath="I:/ILSVRC/Data/DET/train/"
         
-        #debug
-        print ('elementDict = {} '.format(elementDict))
-        #debug -ends
-        imgpath="../img/lady.jpeg"
+        objStoragePath = "I:/ILSVRC/objects"
+        
+        self.getObjectImg(xmlDirPath = xmlFilePath, imgDirPath = imgpath,\
+                                            objectStoragePath = objStoragePath,\
+                                                     catList = categoryList)
         imgExtraction=ImgExtraction()
-        flag2=imgExtraction.displayImageObject(imgpath, elementDict)
-        flag=imgExtraction.extractImgData(imgpath,elementDict)
-        print (flag, flag2)
 #|------------------------imagenetObjectDetection -ends------------------------|
 
+#|-----------------------------------------------------------------------------|
+# getObjectImg
+#|-----------------------------------------------------------------------------|
+    def getObjectImg(self, xmlDirPath, imgDirPath, objectStoragePath, catList):
+        """
+        given function read catList path, append that path in xmlPath or imgPath,
+        read xml as well as image, and store objects based on its category
+        """
+        xmlExtraction=XmlExtraction()
+        imgExtraction=ImgExtraction()
 
+        for i in range(5):
+            xmlFilePath = xmlDirPath+catList[i]+".xml"
+            imgFilePath = imgDirPath+catList[i]+".jpeg"
+            
+            #debug
+            print ('xmlFilePath = {} '.format(xmlFilePath))
+            print ('imgFilePath = {} '.format(imgFilePath))
+            #debug -ends
+            
+            elementDict = xmlExtraction.extractXMLData(xmlFilePath = xmlFilePath)
+            #debug
+            print ('elementDict = {} '.format(elementDict))
+            #debug -ends  
+            flag2=imgExtraction.displayImageObject(imgFilePath, elementDict)
+            flag=imgExtraction.extractImgData(imgFilePath, objectStoragePath ,elementDict)          
+            
+#|------------------------getObjectImg -ends----------------------------------|    
 
 
 

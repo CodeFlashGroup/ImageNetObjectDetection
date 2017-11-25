@@ -11,7 +11,7 @@ class XmlExtraction:
         given function reads xml file, and return its values in the dictionary
         """
         #parsing xml in tree
-        tree = ET.parse('../xmlData/lady.xml')
+        tree = ET.parse(xmlFilePath)
         #getting root element of tree
         root = tree.getroot()
         #creating elementDict
