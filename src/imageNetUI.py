@@ -1,5 +1,5 @@
-from CombineExtraction import XmlExtraction
 from ImageExtraction import ImgExtraction
+from xmlExtraction import XmlExtraction
 
 
 class ImageNetUI:
@@ -15,9 +15,19 @@ class ImageNetUI:
         
         """
         xmlExtraction=XmlExtraction()
+        catFilePath = "I:/ILSVRC/ImageSets/DET/train_1.txt"
+        categoryList = xmlExtraction.readCategory(catFilePath)
+
+#         #debug
+#         print ('categoryList = {} '.format(categoryList))
+#         #debug -ends
+
         xmlFilePath="../xmlData/lady.xml"
         elementDict = xmlExtraction.extractXMLData(xmlFilePath = xmlFilePath)
         
+        #debug
+        print ('elementDict = {} '.format(elementDict))
+        #debug -ends
         imgpath="../img/lady.jpeg"
         imgExtraction=ImgExtraction()
         flag=imgExtraction.extractImgData(imgpath,elementDict)
@@ -38,7 +48,7 @@ class ImageNetUI:
 
 
 if __name__ == '__main__':
-    filePath = ""
+    filePath = "I:\ILSVRC"
     imageNetUI = ImageNetUI()
     imageNetUI.imagenetObjectDetection(filePath)
     

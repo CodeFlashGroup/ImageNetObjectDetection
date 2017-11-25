@@ -37,7 +37,7 @@ class XmlExtraction:
             counter += 1
 
         return elementDict
-        # |------------------------extractXMLData -ends---------------------------------|
+# |------------------------extractXMLData -ends---------------------------------|
 class ImgExtraction:
     # |-----------------------------------------------------------------------------|
     # extractImgData

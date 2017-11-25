@@ -1,6 +1,8 @@
 import xml.etree.ElementTree as ET
+import numpy as np
 
 class XmlExtraction:
+   
 #|-----------------------------------------------------------------------------|
 # extractXMLData
 #|-----------------------------------------------------------------------------|
@@ -35,13 +37,58 @@ class XmlExtraction:
         
         return elementDict    
 #|------------------------extractXMLData -ends---------------------------------|
-
+#|-----------------------------------------------------------------------------|
+# readCategory
+#|-----------------------------------------------------------------------------|
+    def readCategory(self, catFilePath):
+        """
+        Input: filePath string
+        output: list containing file path
+        given function reads a particular category file and store its file path
+        into a list
+        
+        NOTE: skipping folders which has ILSVRC2013_train_extra ... key word as
+        their ennotations are not provided
+        """
+        #reading file
+        with open(catFilePath) as textFile:
+            lines = [line.split() for line in textFile]
+        #file read -ends
+        
+        #closing text file
+        textFile.close()
+        
+        #removing 2nd column with number
+        fileList =  (np.array(lines)[:,0])
+        
+        parsedFileList = self.removeExtraDir(fileList)
+        return parsedFileList
+#|------------------------readCategory -ends----------------------------------| 
+#|-----------------------------------------------------------------------------|
+# removeExtraDir
+#|-----------------------------------------------------------------------------|
+    def removeExtraDir(self, fileList):
+        """
+        here, images in ILSVRC2013_train_extra ... does not have annotations.
+        So we are skipping these extra directories
+        """
+        parsedFileList = []
+        for myStr in fileList:
+            if not (myStr.startswith("ILSVRC2013_train_extra")):
+                parsedFileList.append(myStr)
+            #if -ends
+        #for -ends
+        return parsedFileList
+    
+#|------------------------removeExtraDir -ends----------------------------------|    
+ 
 if __name__ == '__main__':
     filePath = '../xmlData/lady.xml'
-    
+     
     xmlExtraction = XmlExtraction()
     elementDict = xmlExtraction.extractXMLData(filePath)
-    
+     
     #debug
     print ('elementDict = {} '.format(elementDict))
     #debug -ends
+    
