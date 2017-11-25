@@ -1,7 +1,6 @@
 from ImageExtraction import ImgExtraction
 from xmlExtraction import XmlExtraction
 
-
 class ImageNetUI:
     
 #|-----------------------------------------------------------------------------|

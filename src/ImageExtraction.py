@@ -22,7 +22,7 @@ class ImgExtraction:
             ymax=int(obj['ymax'])
             #print(xmin)
             out = img[ymin:ymax,xmin:xmax]
-            strimg="Cropped"+str(i)+".jpeg"
+            strimg="../img/Cropped"+str(i)+".jpeg"
             print(strimg)
             cv2.imwrite(strimg, out)
             cv2.waitKey(0)
@@ -54,7 +54,7 @@ class ImgExtraction:
         # for i -ends
         cv2.imshow("imgWithBox", img)
 
-        cv2.imwrite("imgWithBox.jpeg", img)
+        cv2.imwrite("../img/imgWithBox.jpeg", img)
         cv2.waitKey(0)
         print ("object has been found")
         return True
