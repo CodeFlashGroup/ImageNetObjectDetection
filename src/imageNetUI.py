@@ -30,8 +30,10 @@ class ImageNetUI:
         #debug -ends
         imgpath="../img/lady.jpeg"
         imgExtraction=ImgExtraction()
+        flag2=imgExtraction.displayImageObject(imgpath, elementDict)
         flag=imgExtraction.extractImgData(imgpath,elementDict)
-#|------------------------imagenetObjectDetection -ends------------------------|    
+        print (flag, flag2)
+#|------------------------imagenetObjectDetection -ends------------------------|
 
 
 
