@@ -14,17 +14,17 @@ class ImageNetUI:
         
         """
         xmlExtraction=XmlExtraction()
-        catFilePath = "I:/ILSVRC/ImageSets/DET/train_1.txt"
+        catFilePath = "F:/ILSVRC/ImageSets/DET/train_1.txt"
         categoryList = xmlExtraction.readCategory(catFilePath)
 
 #         #debug
 #         print ('categoryList = {} '.format(categoryList))
 #         #debug -ends
 
-        xmlFilePath="I:/ILSVRC/Annotations/DET/train/"        
-        imgpath="I:/ILSVRC/Data/DET/train/"
+        xmlFilePath="F:/ILSVRC/Annotations/DET/train/"
+        imgpath="F:/ILSVRC/Data/DET/train/"
         
-        objStoragePath = "I:/ILSVRC/objects"
+        objStoragePath = "F:/ILSVRC/objects/"
         
         self.getObjectImg(xmlDirPath = xmlFilePath, imgDirPath = imgpath,\
                                             objectStoragePath = objStoragePath,\
@@ -59,20 +59,7 @@ class ImageNetUI:
             flag2=imgExtraction.displayImageObject(imgFilePath, elementDict)
             flag=imgExtraction.extractImgData(imgFilePath, objectStoragePath ,elementDict)          
             
-#|------------------------getObjectImg -ends----------------------------------|    
-
-
-
-
-
-
-
-
-
-
-
-
-
+#|------------------------getObjectImg -ends----------------------------------|
 if __name__ == '__main__':
     filePath = "I:\ILSVRC"
     imageNetUI = ImageNetUI()

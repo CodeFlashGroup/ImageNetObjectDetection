@@ -1,5 +1,6 @@
 import cv2
 import difflib
+import os
 
 class ImgExtraction:
 
@@ -16,13 +17,22 @@ class ImgExtraction:
         i=0
         for object in key:
             obj=elementDict[object]
+            objName = obj['name']
             xmin=int(obj['xmin'])
             ymin=int(obj['ymin'])
             xmax=int(obj['xmax'])
             ymax=int(obj['ymax'])
             #print(xmin)
             out = img[ymin:ymax,xmin:xmax]
-            strimg="../img/Cropped"+str(i)+".jpeg"
+            directory=objectStoragePath+objName
+
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+                countFiles=0
+            else:
+                path,dirs,files=os.walk(directory).__next__()
+                countFiles=len(files)
+            strimg=os.path.join(directory,str(countFiles)+".jpeg")
             print(strimg)
             cv2.imwrite(strimg, out)
             cv2.waitKey(0)
@@ -60,7 +70,6 @@ class ImgExtraction:
 
         # for i -ends
         cv2.imshow("imgWithBox", img)
-
         cv2.imwrite("../img/imgWithBox.jpeg", img)
         cv2.waitKey(0)
         print ("object has been found")
