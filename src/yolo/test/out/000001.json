@@ -1,0 +1,4 @@
+[{"label":"person","confidence":0.78,"topleft":{"x":64,"y":12},"bottomright":{"x":352,"y":436}},
+{"label":"dog","confidence":0.18,"topleft":{"x":0,"y":102},"bottomright":{"x":316,"y":455}},
+{"label":"sofa","confidence":0.33,"topleft":{"x":0,"y":38},"bottomright":{"x":338,"y":463}},
+{"label":"sofa","confidence":0.33,"topleft":{"x":0,"y":38},"bottomright":{"x":338,"y":463}}]

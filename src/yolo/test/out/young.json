@@ -1,0 +1,13 @@
+[{"label":"person","confidence":0.83,"topleft":{"x":70,"y":116},"bottomright":{"x":380,"y":1139}},
+{"label":"person","confidence":0.90,"topleft":{"x":326,"y":63},"bottomright":{"x":686,"y":1175}},
+{"label":"person","confidence":0.79,"topleft":{"x":672,"y":16},"bottomright":{"x":1015,"y":1188}},
+{"label":"person","confidence":0.92,"topleft":{"x":961,"y":75},"bottomright":{"x":1258,"y":1157}},
+{"label":"person","confidence":0.13,"topleft":{"x":705,"y":351},"bottomright":{"x":900,"y":1137}},
+{"label":"backpack","confidence":0.10,"topleft":{"x":351,"y":266},"bottomright":{"x":524,"y":581}},
+{"label":"handbag","confidence":0.57,"topleft":{"x":311,"y":290},"bottomright":{"x":450,"y":692}},
+{"label":"handbag","confidence":0.21,"topleft":{"x":353,"y":264},"bottomright":{"x":438,"y":461}},
+{"label":"handbag","confidence":0.57,"topleft":{"x":311,"y":290},"bottomright":{"x":450,"y":692}},
+{"label":"book","confidence":0.56,"topleft":{"x":720,"y":328},"bottomright":{"x":880,"y":486}},
+{"label":"book","confidence":0.15,"topleft":{"x":576,"y":520},"bottomright":{"x":640,"y":684}},
+{"label":"clock","confidence":0.22,"topleft":{"x":1178,"y":76},"bottomright":{"x":1229,"y":127}},
+{"label":"clock","confidence":0.57,"topleft":{"x":1168,"y":63},"bottomright":{"x":1256,"y":155}}]

@@ -1,0 +1,5 @@
+[{"label":"horse","confidence":0.11,"topleft":{"x":341,"y":198},"bottomright":{"x":430,"y":258}},
+{"label":"horse","confidence":0.10,"topleft":{"x":392,"y":206},"bottomright":{"x":457,"y":255}},
+{"label":"horse","confidence":0.75,"topleft":{"x":252,"y":196},"bottomright":{"x":434,"y":371}},
+{"label":"horse","confidence":0.89,"topleft":{"x":435,"y":210},"bottomright":{"x":603,"y":349}},
+{"label":"horse","confidence":0.89,"topleft":{"x":6,"y":193},"bottomright":{"x":304,"y":410}}]

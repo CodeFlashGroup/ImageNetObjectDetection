@@ -1,0 +1,10 @@
+[{"label":"car","confidence":0.35,"topleft":{"x":50,"y":398},"bottomright":{"x":167,"y":476}},
+{"label":"car","confidence":0.50,"topleft":{"x":269,"y":419},"bottomright":{"x":547,"y":520}},
+{"label":"truck","confidence":0.53,"topleft":{"x":578,"y":381},"bottomright":{"x":1173,"y":592}},
+{"label":"car","confidence":0.39,"topleft":{"x":604,"y":386},"bottomright":{"x":1178,"y":586}},
+{"label":"truck","confidence":0.66,"topleft":{"x":39,"y":349},"bottomright":{"x":275,"y":480}},
+{"label":"truck","confidence":0.62,"topleft":{"x":120,"y":342},"bottomright":{"x":471,"y":493}},
+{"label":"car","confidence":0.35,"topleft":{"x":50,"y":398},"bottomright":{"x":167,"y":476}},
+{"label":"truck","confidence":0.56,"topleft":{"x":406,"y":322},"bottomright":{"x":917,"y":562}},
+{"label":"truck","confidence":0.36,"topleft":{"x":287,"y":418},"bottomright":{"x":557,"y":518}},
+{"label":"truck","confidence":0.53,"topleft":{"x":578,"y":381},"bottomright":{"x":1173,"y":592}}]

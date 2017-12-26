@@ -1,0 +1,10 @@
+[{"label":"chair","confidence":0.12,"topleft":{"x":36,"y":399},"bottomright":{"x":286,"y":601}},
+{"label":"chair","confidence":0.86,"topleft":{"x":297,"y":375},"bottomright":{"x":448,"y":577}},
+{"label":"chair","confidence":0.86,"topleft":{"x":564,"y":380},"bottomright":{"x":704,"y":585}},
+{"label":"chair","confidence":0.10,"topleft":{"x":686,"y":407},"bottomright":{"x":950,"y":639}},
+{"label":"chair","confidence":0.30,"topleft":{"x":0,"y":611},"bottomright":{"x":127,"y":636}},
+{"label":"chair","confidence":0.12,"topleft":{"x":36,"y":399},"bottomright":{"x":286,"y":601}},
+{"label":"sofa","confidence":0.87,"topleft":{"x":0,"y":391},"bottomright":{"x":288,"y":639}},
+{"label":"sofa","confidence":0.90,"topleft":{"x":651,"y":412},"bottomright":{"x":959,"y":639}},
+{"label":"diningtable","confidence":0.70,"topleft":{"x":327,"y":520},"bottomright":{"x":619,"y":639}},
+{"label":"book","confidence":0.62,"topleft":{"x":416,"y":553},"bottomright":{"x":524,"y":602}}]

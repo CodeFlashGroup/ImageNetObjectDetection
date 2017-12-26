@@ -1,0 +1,5 @@
+[{"label":"person","confidence":0.14,"topleft":{"x":98,"y":232},"bottomright":{"x":253,"y":438}},
+{"label":"suitcase","confidence":0.16,"topleft":{"x":28,"y":26},"bottomright":{"x":351,"y":418}},
+{"label":"diningtable","confidence":0.12,"topleft":{"x":0,"y":33},"bottomright":{"x":342,"y":412}},
+{"label":"diningtable","confidence":0.12,"topleft":{"x":0,"y":33},"bottomright":{"x":342,"y":412}},
+{"label":"oven","confidence":0.24,"topleft":{"x":14,"y":50},"bottomright":{"x":336,"y":439}}]

@@ -1,0 +1,12 @@
+[{"label":"tvmonitor","confidence":0.15,"topleft":{"x":322,"y":148},"bottomright":{"x":410,"y":313}},
+{"label":"cup","confidence":0.38,"topleft":{"x":318,"y":146},"bottomright":{"x":423,"y":317}},
+{"label":"cup","confidence":0.36,"topleft":{"x":375,"y":347},"bottomright":{"x":422,"y":374}},
+{"label":"spoon","confidence":0.11,"topleft":{"x":465,"y":259},"bottomright":{"x":499,"y":357}},
+{"label":"bowl","confidence":0.25,"topleft":{"x":419,"y":316},"bottomright":{"x":484,"y":364}},
+{"label":"tvmonitor","confidence":0.88,"topleft":{"x":157,"y":94},"bottomright":{"x":345,"y":280}},
+{"label":"tvmonitor","confidence":0.15,"topleft":{"x":322,"y":148},"bottomright":{"x":410,"y":313}},
+{"label":"tvmonitor","confidence":0.15,"topleft":{"x":322,"y":148},"bottomright":{"x":410,"y":313}},
+{"label":"cup","confidence":0.38,"topleft":{"x":318,"y":146},"bottomright":{"x":423,"y":317}},
+{"label":"mouse","confidence":0.16,"topleft":{"x":361,"y":348},"bottomright":{"x":422,"y":374}},
+{"label":"keyboard","confidence":0.80,"topleft":{"x":123,"y":263},"bottomright":{"x":333,"y":371}},
+{"label":"refrigerator","confidence":0.49,"topleft":{"x":0,"y":20},"bottomright":{"x":130,"y":351}}]

@@ -1,0 +1,4 @@
+[{"label":"giraffe","confidence":0.12,"topleft":{"x":232,"y":185},"bottomright":{"x":427,"y":432}},
+{"label":"zebra","confidence":0.81,"topleft":{"x":240,"y":208},"bottomright":{"x":421,"y":441}},
+{"label":"giraffe","confidence":0.90,"topleft":{"x":165,"y":0},"bottomright":{"x":438,"y":450}},
+{"label":"giraffe","confidence":0.12,"topleft":{"x":232,"y":185},"bottomright":{"x":427,"y":432}}]

@@ -1,0 +1,7 @@
+[{"label":"bicycle","confidence":0.84,"topleft":{"x":81,"y":114},"bottomright":{"x":553,"y":466}},
+{"label":"truck","confidence":0.80,"topleft":{"x":462,"y":81},"bottomright":{"x":693,"y":167}},
+{"label":"motorbike","confidence":0.28,"topleft":{"x":59,"y":76},"bottomright":{"x":114,"y":124}},
+{"label":"truck","confidence":0.80,"topleft":{"x":462,"y":81},"bottomright":{"x":693,"y":167}},
+{"label":"cat","confidence":0.13,"topleft":{"x":139,"y":197},"bottomright":{"x":314,"y":551}},
+{"label":"cat","confidence":0.13,"topleft":{"x":139,"y":197},"bottomright":{"x":314,"y":551}},
+{"label":"dog","confidence":0.77,"topleft":{"x":136,"y":214},"bottomright":{"x":322,"y":539}}]

@@ -1,0 +1,5 @@
+[{"label":"dog","confidence":0.88,"topleft":{"x":57,"y":52},"bottomright":{"x":265,"y":552}},
+{"label":"dog","confidence":0.78,"topleft":{"x":243,"y":146},"bottomright":{"x":437,"y":562}},
+{"label":"dog","confidence":0.77,"topleft":{"x":401,"y":126},"bottomright":{"x":569,"y":593}},
+{"label":"dog","confidence":0.82,"topleft":{"x":534,"y":170},"bottomright":{"x":706,"y":558}},
+{"label":"dog","confidence":0.90,"topleft":{"x":679,"y":192},"bottomright":{"x":850,"y":546}}]
