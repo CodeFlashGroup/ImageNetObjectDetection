@@ -5,3 +5,4 @@ src/CombineExtraction.pyc
 src/__pycache__
 .settings
 img
+src/yolo/cfg/weights/yolo-new.weights
