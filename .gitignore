@@ -6,3 +6,4 @@ src/__pycache__
 .settings
 img
 src/yolo/cfg/weights/yolo-new.weights
+ src/yolo/cfg/weights/yolo.weights
